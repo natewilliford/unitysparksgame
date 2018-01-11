@@ -29,7 +29,7 @@ public class TouchManager {
 
     private List<TouchGestureListener> listeners = new List<TouchGestureListener>();
 
-        public void UpdateTouches() {
+    public void UpdateTouches() {
         foreach(Touch touch in Input.touches) {
             HandleTouch(touch.fingerId, touch.position, touch.phase);
         }

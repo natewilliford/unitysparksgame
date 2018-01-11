@@ -1,0 +1,1997 @@
+fileFormatVersion: 2
+guid: ea8ff7fd85f3b504db9880514905b046
+timeCreated: 1515640076
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: medievalEnvironment_01.png
+    21300002: medievalEnvironment_02.png
+    21300004: medievalEnvironment_03.png
+    21300006: medievalEnvironment_04.png
+    21300008: medievalEnvironment_05.png
+    21300010: medievalEnvironment_06.png
+    21300012: medievalEnvironment_07.png
+    21300014: medievalEnvironment_08.png
+    21300016: medievalEnvironment_09.png
+    21300018: medievalEnvironment_10.png
+    21300020: medievalEnvironment_11.png
+    21300022: medievalEnvironment_12.png
+    21300024: medievalEnvironment_13.png
+    21300026: medievalEnvironment_14.png
+    21300028: medievalEnvironment_15.png
+    21300030: medievalEnvironment_16.png
+    21300032: medievalEnvironment_17.png
+    21300034: medievalEnvironment_18.png
+    21300036: medievalEnvironment_19.png
+    21300038: medievalEnvironment_20.png
+    21300040: medievalEnvironment_21.png
+    21300042: medievalStructure_01.png
+    21300044: medievalStructure_02.png
+    21300046: medievalStructure_03.png
+    21300048: medievalStructure_04.png
+    21300050: medievalStructure_05.png
+    21300052: medievalStructure_06.png
+    21300054: medievalStructure_07.png
+    21300056: medievalStructure_08.png
+    21300058: medievalStructure_09.png
+    21300060: medievalStructure_10.png
+    21300062: medievalStructure_11.png
+    21300064: medievalStructure_12.png
+    21300066: medievalStructure_13.png
+    21300068: medievalStructure_14.png
+    21300070: medievalStructure_15.png
+    21300072: medievalStructure_16.png
+    21300074: medievalStructure_17.png
+    21300076: medievalStructure_18.png
+    21300078: medievalStructure_19.png
+    21300080: medievalStructure_20.png
+    21300082: medievalStructure_21.png
+    21300084: medievalStructure_22.png
+    21300086: medievalStructure_23.png
+    21300088: medievalTile_01.png
+    21300090: medievalTile_02.png
+    21300092: medievalTile_03.png
+    21300094: medievalTile_04.png
+    21300096: medievalTile_05.png
+    21300098: medievalTile_06.png
+    21300100: medievalTile_07.png
+    21300102: medievalTile_08.png
+    21300104: medievalTile_09.png
+    21300106: medievalTile_10.png
+    21300108: medievalTile_11.png
+    21300110: medievalTile_12.png
+    21300112: medievalTile_13.png
+    21300114: medievalTile_14.png
+    21300116: medievalTile_15.png
+    21300118: medievalTile_16.png
+    21300120: medievalTile_17.png
+    21300122: medievalTile_18.png
+    21300124: medievalTile_19.png
+    21300126: medievalTile_20.png
+    21300128: medievalTile_21.png
+    21300130: medievalTile_22.png
+    21300132: medievalTile_23.png
+    21300134: medievalTile_24.png
+    21300136: medievalTile_25.png
+    21300138: medievalTile_26.png
+    21300140: medievalTile_27.png
+    21300142: medievalTile_28.png
+    21300144: medievalTile_29.png
+    21300146: medievalTile_30.png
+    21300148: medievalTile_31.png
+    21300150: medievalTile_32.png
+    21300152: medievalTile_33.png
+    21300154: medievalTile_34.png
+    21300156: medievalTile_35.png
+    21300158: medievalTile_36.png
+    21300160: medievalTile_37.png
+    21300162: medievalTile_38.png
+    21300164: medievalTile_39.png
+    21300166: medievalTile_40.png
+    21300168: medievalTile_41.png
+    21300170: medievalTile_42.png
+    21300172: medievalTile_43.png
+    21300174: medievalTile_44.png
+    21300176: medievalTile_45.png
+    21300178: medievalTile_46.png
+    21300180: medievalTile_47.png
+    21300182: medievalTile_48.png
+    21300184: medievalTile_49.png
+    21300186: medievalTile_50.png
+    21300188: medievalTile_51.png
+    21300190: medievalTile_52.png
+    21300192: medievalTile_53.png
+    21300194: medievalTile_54.png
+    21300196: medievalTile_55.png
+    21300198: medievalTile_56.png
+    21300200: medievalTile_57.png
+    21300202: medievalTile_58.png
+    21300204: medievalUnit_01.png
+    21300206: medievalUnit_02.png
+    21300208: medievalUnit_03.png
+    21300210: medievalUnit_04.png
+    21300212: medievalUnit_05.png
+    21300214: medievalUnit_06.png
+    21300216: medievalUnit_07.png
+    21300218: medievalUnit_08.png
+    21300220: medievalUnit_09.png
+    21300222: medievalUnit_10.png
+    21300224: medievalUnit_11.png
+    21300226: medievalUnit_12.png
+    21300228: medievalUnit_13.png
+    21300230: medievalUnit_14.png
+    21300232: medievalUnit_15.png
+    21300234: medievalUnit_16.png
+    21300236: medievalUnit_17.png
+    21300238: medievalUnit_18.png
+    21300240: medievalUnit_19.png
+    21300242: medievalUnit_20.png
+    21300244: medievalUnit_21.png
+    21300246: medievalUnit_22.png
+    21300248: medievalUnit_23.png
+    21300250: medievalUnit_24.png
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 128
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medievalEnvironment_01.png
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 372
+        width: 38
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_02.png
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 306
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_03.png
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1004
+        width: 53
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_04.png
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 334
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_05.png
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 334
+        width: 72
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_06.png
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 465
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_07.png
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 81
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_08.png
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 501
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_09.png
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 565
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_10.png
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 635
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_11.png
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 705
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_12.png
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 799
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_13.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 465
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_14.png
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 854
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_15.png
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 86
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_16.png
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 16
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_17.png
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 910
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_18.png
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 775
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_19.png
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 798
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_20.png
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 686
+        width: 43
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalEnvironment_21.png
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1036
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_01.png
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 317
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_02.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 120
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_03.png
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 8
+        width: 104
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_04.png
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 15
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_05.png
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 617
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_06.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 120
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_07.png
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 8
+        width: 104
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_08.png
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1020
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_09.png
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 87
+        width: 112
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_10.png
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 465
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_11.png
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 845
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_12.png
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 514
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_13.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 997
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_14.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 207
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_15.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 332
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_16.png
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 244
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_17.png
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 980
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_18.png
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 701
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_19.png
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 212
+        width: 104
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_20.png
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 364
+        width: 104
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_21.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 87
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_22.png
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 137
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalStructure_23.png
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 545
+        width: 88
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_01.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_02.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_03.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_04.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_05.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 588
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_06.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 332
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_07.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 204
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_08.png
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 782
+        width: 60
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_09.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 128
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_10.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_11.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 750
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_12.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 400
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_13.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_14.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_15.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_16.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 588
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_17.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 460
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_18.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 332
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_19.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_20.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_21.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 460
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_22.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 711
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_23.png
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 371
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_24.png
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 15
+        width: 100
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_25.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 583
+        width: 94
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_26.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 797
+        width: 95
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_27.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 76
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_28.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 332
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_29.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_30.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_31.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_32.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_33.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 588
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_34.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_35.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_36.png
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 150
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_37.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 497
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_38.png
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 925
+        width: 100
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_39.png
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 401
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_40.png
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 217
+        width: 72
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_41.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 76
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_42.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 204
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_43.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 494
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_44.png
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 460
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_45.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 622
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_46.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_47.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 76
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_48.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 460
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_49.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_50.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 204
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_51.png
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_52.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_53.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 588
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_54.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_55.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 844
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_56.png
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 972
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_57.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalTile_58.png
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_01.png
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 956
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_02.png
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 928
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_03.png
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 256
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_04.png
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 586
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_05.png
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 258
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_06.png
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 58
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_07.png
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 10
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_08.png
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 928
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_09.png
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 206
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_10.png
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 954
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_11.png
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 590
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_12.png
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 494
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_13.png
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 638
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_14.png
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 29
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_15.png
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 156
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_16.png
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 636
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_17.png
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 542
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_18.png
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 416
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_19.png
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 368
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_20.png
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 29
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_21.png
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 106
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_22.png
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 464
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_23.png
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 320
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: medievalUnit_24.png
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 734
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

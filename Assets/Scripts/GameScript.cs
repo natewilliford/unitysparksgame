@@ -24,36 +24,46 @@ public enum LoginType : int {
 	UsernamePassword = 2,
 }
 
-public class GameScript : MonoBehaviour {
+public class GameScript : MonoBehaviour, TouchGestureListener {
 
 	public GameSparksManager gameSparksManager;
 	public UIManager uiManager;
 
 	private InitialiationState initialiationState = InitialiationState.Starting;
 
+	private TouchManager touchManager;
 
 	private bool gsAvailable = false;
 	private bool gsAuthenticated = false;
 
+
+	
+    private BuildingBehavior placingBuildingBehavior;
+
+    public BuildingBehavior farmPrefab;
+
 	void Start () {
 
-		// GS.GameSparksAvailable += GSAvailableHandler;
+		touchManager = new TouchManager();
+		touchManager.AddListener(this);
+
+		GS.GameSparksAvailable += GSAvailableHandler;
 
 
-		MyTestClass testClass = MyTestClass.BuildMyTestClass();
-		GSData gsData = new GSData(GSDataHelpers.ObjectToGSData(testClass));
+		// MyTestClass testClass = MyTestClass.BuildMyTestClass();
+		// GSData gsData = new GSData(GSDataHelpers.ObjectToGSData(testClass));
 
-		Debug.LogWarning("Size of JSON object: " + GSDataHelpers.SizeOfGSData(gsData) + " bytes");
+		// Debug.LogWarning("Size of JSON object: " + GSDataHelpers.SizeOfGSData(gsData) + " bytes");
 
-		string json = gsData.JSON;
+		// string json = gsData.JSON;
 
-		GSData newGSData = new GSRequestData(json);
+		// GSData newGSData = new GSRequestData(json);
 		
-		// var gsDataList = newGSData.GetGSDataList("myInventory");
-		// Debug.Log(gsDataList);
-		MyTestClass otherTestClass = (MyTestClass)GSDataHelpers.GSDataToObject(newGSData);
+		// // var gsDataList = newGSData.GetGSDataList("myInventory");
+		// // Debug.Log(gsDataList);
+		// MyTestClass otherTestClass = (MyTestClass)GSDataHelpers.GSDataToObject(newGSData);
 
-		Debug.Log(otherTestClass.myInventory[1].name);
+		// Debug.Log(otherTestClass.myInventory[1].name);
 
 
 
@@ -65,6 +75,10 @@ public class GameScript : MonoBehaviour {
 		// var finalList = gsRequestData.GetGSDataList("theList");
 		// Debug.Log(finalList);
 
+	}
+
+	void Update() {
+		touchManager.UpdateTouches();
 	}
 
 	private void InitUser() {
@@ -175,4 +189,75 @@ public class GameScript : MonoBehaviour {
 		// TODO: clear player data.
 		InitUser();
 	}
+
+
+
+
+
+	public void OnTouchGesture(TouchGesture gesture) {
+		
+        if (placingBuildingBehavior != null) {
+			Debug.Log("got a placingBuildingBehavior");
+
+            if (gesture.type == TouchGestureType.Tap) {
+                Debug.Log("Tap at " + gesture.endPosition);
+                RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(gesture.endPosition), Vector2.zero);
+                if (hitInfo) {
+
+                    if (hitInfo.transform.CompareTag("Confirm")) {
+                        ConfirmPlacement();
+                    } else if (hitInfo.transform.CompareTag("Cancel")) {
+                        CancelPlacement();
+                    }
+                }
+            } else if (gesture.type == TouchGestureType.Drag) {
+
+                Debug.Log("drag at " + gesture.endPosition);
+                Vector2 endPoint = Camera.main.ScreenToWorldPoint(gesture.endPosition);
+                Vector2 placePoint = new Vector2(endPoint.x, endPoint.y + 0.3f);
+
+                if (placingBuildingBehavior.IsDragging()) {
+                    placingBuildingBehavior.gameObject.transform.position = placePoint;
+                } else {
+
+                    if (placingBuildingBehavior != null) {
+                        RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(gesture.startPosition), Vector2.zero);
+                        if (hitInfo && hitInfo.collider.gameObject == placingBuildingBehavior.gameObject) {
+                            placingBuildingBehavior.gameObject.transform.position = placePoint;
+                            placingBuildingBehavior.SetDragging(true);
+                        }
+                    }
+                }
+
+            } else if (gesture.type == TouchGestureType.DragEnd) {
+                if (placingBuildingBehavior != null) {
+                    placingBuildingBehavior.SetDragging(false);
+                }
+            }
+        }
+	}
+	
+    public void PlaceBuilding() {
+        Debug.Log("place buliding");
+        if (placingBuildingBehavior != null) {
+            Debug.Log("canceling previous");
+            CancelPlacement();
+        }
+
+        placingBuildingBehavior = Instantiate< BuildingBehavior>(farmPrefab);
+        if (placingBuildingBehavior.gameObject != null) {
+            Debug.Log("got a building to place");
+        } else {
+            Debug.Log("it's broken, yo");
+        }
+    }
+
+    private void CancelPlacement() {
+        Destroy(placingBuildingBehavior.gameObject);
+        placingBuildingBehavior = null;
+    }
+    private void ConfirmPlacement() {
+        placingBuildingBehavior.ConfirmPlacement();
+        placingBuildingBehavior = null;
+    }
 }
