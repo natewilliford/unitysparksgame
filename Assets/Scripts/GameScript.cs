@@ -1,4 +1,5 @@
 ﻿using GameSparks;
+using GameSparks.Api.Responses;
 using GameSparks.Core;
 using System;
 using System.Collections;
@@ -41,6 +42,10 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
     private BuildingBehavior placingBuildingBehavior;
 
     public BuildingBehavior farmPrefab;
+
+	private GameData gameData = new GameData();
+	private Dictionary<object, GameObject> dataGameObjectsMap = new Dictionary<object, GameObject>();
+	
 
 	void Start () {
 
@@ -97,6 +102,7 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 			if (GS.Authenticated) {
 				initialiationState = InitialiationState.Authenticated;
 				Debug.Log("Authenticated");
+				LoadPlayer();
 			} else {
 				Debug.Log("Not authenticated");
 				if (PlayerPrefs.GetInt("login_type") == (int)LoginType.UsernamePassword) {
@@ -180,6 +186,24 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 		}
 		initialiationState = InitialiationState.Loading;
 
+		Debug.Log("Loading buildings");
+		gameSparksManager.GetPlayerBuildings((LogEventResponse response) => {
+			if (response.HasErrors) {
+				// handle bla
+			} else {
+				foreach(GSData buildingWrapperGSData in response.ScriptData.GetGSDataList("player_buildings")) {
+					GSData buildingGSData = buildingWrapperGSData.GetGSData("building");
+					Building buildingData = (Building)GSDataHelpers.GSDataToObject(buildingGSData);
+					gameData.AddBuilding(buildingData);
+					BuildingBehavior newBuilding = Instantiate<BuildingBehavior>(farmPrefab);
+					newBuilding.SetPlaced(true);
+					
+					newBuilding.transform.position = new Vector2(float.Parse(buildingData.posX), float.Parse(buildingData.posY));
+					dataGameObjectsMap.Add(buildingData, newBuilding.gameObject);
+				}
+			}
+		});
+
 		Debug.Log("Loading player");
 	}
 
@@ -197,7 +221,7 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 	public void OnTouchGesture(TouchGesture gesture) {
 		
         if (placingBuildingBehavior != null) {
-			Debug.Log("got a placingBuildingBehavior");
+			// Debug.Log("got a placingBuildingBehavior");
 
             if (gesture.type == TouchGestureType.Tap) {
                 Debug.Log("Tap at " + gesture.endPosition);
@@ -212,7 +236,7 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
                 }
             } else if (gesture.type == TouchGestureType.Drag) {
 
-                Debug.Log("drag at " + gesture.endPosition);
+                // Debug.Log("drag at " + gesture.endPosition);
                 Vector2 endPoint = Camera.main.ScreenToWorldPoint(gesture.endPosition);
                 Vector2 placePoint = new Vector2(endPoint.x, endPoint.y + 0.3f);
 
@@ -257,7 +281,21 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
         placingBuildingBehavior = null;
     }
     private void ConfirmPlacement() {
-        placingBuildingBehavior.ConfirmPlacement();
-        placingBuildingBehavior = null;
+		placingBuildingBehavior.SetPendingPlacement(true);
+
+		gameSparksManager.BuyBuilding("farm", placingBuildingBehavior.transform.position, (LogEventResponse response) => {
+			placingBuildingBehavior.SetPendingPlacement(false);
+			if (!response.HasErrors) {
+				placingBuildingBehavior.ConfirmPlacement();
+        		placingBuildingBehavior = null;
+
+
+				// Building buildingData = (Building)GSDataHelpers.GSDataToObject(buildingGSData);
+				// 	gameData.AddBuilding(buildingData);
+				// 	BuildingBehavior newBuilding = Instantiate<BuildingBehavior>(farmPrefab);
+				// 	newBuilding.transform.position = new Vector2(buildingData.posX, buildingData.posY);
+				// 	dataGameObjectsMap.Add(buildingData, newBuilding.gameObject);
+			}
+		});
     }
 }

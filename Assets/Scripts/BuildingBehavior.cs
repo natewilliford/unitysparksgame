@@ -9,25 +9,43 @@ public class BuildingBehavior : MonoBehaviour {
 
     private bool placed;
 
-    private SpriteRenderer spriteRenderer;
+    private bool pendingPlacement;
 
-    // private GameObject confirmButton;
-    // private GameObject cancelButton;
+    private SpriteRenderer spriteRenderer;
+    private BoxCollider2D collider;
+
+    private GameObject confirmButton;
+    private GameObject cancelButton;
+
+    private bool started = false;
+
+    void Awake() {
+        Debug.Log("Awake");
+    }
+
+    void OnEnable() {
+        Debug.Log("OnEnable");
+    }
 
 	// Use this for initialization
 	void Start () {
-        spriteRenderer = GetComponent< SpriteRenderer > ();
+        Debug.Log("Start");
 
-        // foreach(Transform child in GetComponentInChildren<Transform>()){
-        //     if (child.CompareTag("Confirm")) {
-        //         confirmButton = child.gameObject;
-        //     }
-        //     if (child.CompareTag("Cancel")) {
-        //         cancelButton = child.gameObject;
-        //     }
-        //     //if (child.) 
-        // }
 
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        collider = GetComponent<BoxCollider2D>();
+
+        foreach(Transform child in GetComponentInChildren<Transform>()){
+            if (child.CompareTag("Confirm")) {
+                confirmButton = child.gameObject;
+            }
+            if (child.CompareTag("Cancel")) {
+                cancelButton = child.gameObject;
+            }
+            //if (child.) 
+        }
+
+        started = true;
         UpdatePlacedDraggingState();
     }
 	
@@ -38,6 +56,7 @@ public class BuildingBehavior : MonoBehaviour {
     }
 
     public void SetDragging(bool dragging) {
+        Debug.Log("SetDragging");
         this.dragging = dragging;
         UpdatePlacedDraggingState();
     }
@@ -52,28 +71,38 @@ public class BuildingBehavior : MonoBehaviour {
         UpdatePlacedDraggingState();
     }
 
+    public void SetPendingPlacement(bool pendingPlacement) {
+        this.pendingPlacement = pendingPlacement;
+        UpdatePlacedDraggingState();
+    }
+
     private void UpdatePlacedDraggingState() {
+        Debug.Log("UpdatePlacedDraggingState");
+
+        if (!started) {
+            Debug.Log("Not Started yet so skipping.");
+            return;
+        }
+
         if (placed) {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = 1f;
             spriteRenderer.color = spriteColor;
-            // confirmButton.SetActive(false);
-            // cancelButton.SetActive(false);
-            //GetComponent<BoxCollider2D>().SetActive(false);
-            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        } else if (dragging) {
+            confirmButton.SetActive(false);
+            cancelButton.SetActive(false);
+            collider.enabled = false;
+        } else if (dragging || pendingPlacement) {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = 0.6f;
             spriteRenderer.color = spriteColor;
-            // confirmButton.SetActive(false);
-            // cancelButton.SetActive(false);
+            confirmButton.SetActive(false);
+            cancelButton.SetActive(false);
         } else {
             Color spriteColor = spriteRenderer.color;
             spriteColor.a = 0.6f;
             spriteRenderer.color = spriteColor;
-            // confirmButton.SetActive(true);
-            // cancelButton.SetActive(true);
+            confirmButton.SetActive(true);
+            cancelButton.SetActive(true);
         }
     }
-
 }

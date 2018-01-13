@@ -10,6 +10,8 @@ public class GameSparksManager : MonoBehaviour {
 
 	private static GameSparksManager instance = null;
 
+	private 
+
 	void Awake() {
 		if (instance == null) {
 			instance = this;
@@ -45,7 +47,6 @@ public class GameSparksManager : MonoBehaviour {
 					Debug.Log("Error logging in" + response.Errors.GetString("DETAILS"));
 				} else {
 					Debug.Log("Logged in user: " + response.UserId + " " + response.DisplayName);
-					// TODO: Save user info.
 					PlayerPrefs.SetString("user_id", response.UserId);
 					PlayerPrefs.SetString("display_name", response.DisplayName);
 					PlayerPrefs.SetInt("login_type", (int)LoginType.UsernamePassword);
@@ -60,17 +61,44 @@ public class GameSparksManager : MonoBehaviour {
 		});
 	}
 
-	public void LoadPlayer() { //Action<LogEventResponse> callback
+	// public void LoadPlayer() { //Action<LogEventResponse> callback
+	// 	new LogEventRequest()
+	// 		.SetEventKey("getPlayerInventory")
+	// 		.Send((LogEventResponse response) => {
+	// 			List<GSData> items = response.ScriptData.GetGSDataList("player_inventory");
+	// 			foreach(GSData eventData in items) {
+	// 				Debug.Log("item: " + eventData.GetGSData("item").GetString("name"));
+	// 			}
+	// 			// callback(response);
+	// 		});
+	// }
+
+	public void BuyBuilding(string shortCode, Vector2 position, Action<LogEventResponse> callback) {
 		new LogEventRequest()
-			.SetEventKey("getPlayerInventory")
+			.SetEventKey("buyBuilding")
+			.SetEventAttribute("shortCode", shortCode)
+			.SetEventAttribute("posX", position.x.ToString())
+			.SetEventAttribute("posY", position.y.ToString())
 			.Send((LogEventResponse response) => {
-				List<GSData> items = response.ScriptData.GetGSDataList("player_inventory");
-				foreach(GSData eventData in items) {
-					Debug.Log("item: " + eventData.GetGSData("item").GetString("name"));
-				}
-				// callback(response);
-			});
+			if (response.HasErrors) {
+				Debug.Log("Buy building has errors: " + response.Errors.GetString("buyBuilding"));
+			} else {
+				response.ScriptData.GetGSData("building").GetString("shortCode");
+			}
+			callback(response);
+		});
 	}
 
+	public void GetPlayerBuildings(Action<LogEventResponse> callback) {
+		new LogEventRequest()
+			.SetEventKey("getPlayerBuildings")
+			.Send((LogEventResponse response) => {
+				List<GSData> buildings = response.ScriptData.GetGSDataList("player_buildings");
+				// foreach(GSData eventData in buildings) {
+					// Debug.Log("item: " + eventData.GetGSData("item").GetString("name"));
+				// }
+				callback(response);
+			});
+	}
 
 }
