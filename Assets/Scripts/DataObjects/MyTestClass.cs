@@ -8,6 +8,7 @@ using UnityEngine;
 [Serializable()]
 public class MyTestClass
 {
+    public ObjectId _id;
     public string myString;
     public int myInt;
     public bool myBool;
@@ -30,7 +31,13 @@ public class MyTestClass
     public MyTestClass() {}
 
     public static MyTestClass BuildMyTestClass() {
+
+        
+
         MyTestClass myTestClass = new MyTestClass();
+
+        myTestClass._id = new ObjectId("testclassid");
+
         myTestClass.myString = "Hello World!";
         myTestClass.myInt = 100;
         myTestClass.myBool = true;
@@ -42,7 +49,7 @@ public class MyTestClass
         myTestClass.myFloatArray = new float[]{ 0.1f, 0.12f, 1.23f };
         myTestClass.myIntList = new List<int>(){ 3, 2, 1 };
 
-        myTestClass.myDate = DateTime.Now;
+        myTestClass.myDate = DateTime.Now.ToUniversalTime();
 
         // this.myPlayerInfo = new PlayerInfo("Randy", 10, 1234);
         myTestClass.mySpecialItem = new TestItem("Special", 2, 299);

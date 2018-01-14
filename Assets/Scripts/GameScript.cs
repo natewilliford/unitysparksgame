@@ -58,9 +58,11 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 		// MyTestClass testClass = MyTestClass.BuildMyTestClass();
 		// GSData gsData = new GSData(GSDataHelpers.ObjectToGSData(testClass));
 
-		// Debug.LogWarning("Size of JSON object: " + GSDataHelpers.SizeOfGSData(gsData) + " bytes");
+		// // Debug.LogWarning("Size of JSON object: " + GSDataHelpers.SizeOfGSData(gsData) + " bytes");
 
 		// string json = gsData.JSON;
+		// // string json = "{\"className\":\"MyTestClass\",\"_id\":{\"$oid\":\"testclassid\"},\"myString\":\"Hello World!\"}";
+		// Debug.Log(json);
 
 		// GSData newGSData = new GSRequestData(json);
 		
@@ -68,7 +70,7 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 		// // Debug.Log(gsDataList);
 		// MyTestClass otherTestClass = (MyTestClass)GSDataHelpers.GSDataToObject(newGSData);
 
-		// Debug.Log(otherTestClass.myInventory[1].name);
+		// Debug.Log(otherTestClass._id.oid);
 
 
 
@@ -191,14 +193,14 @@ public class GameScript : MonoBehaviour, TouchGestureListener {
 			if (response.HasErrors) {
 				// handle bla
 			} else {
-				foreach(GSData buildingWrapperGSData in response.ScriptData.GetGSDataList("player_buildings")) {
-					GSData buildingGSData = buildingWrapperGSData.GetGSData("building");
+				foreach(GSData buildingGSData in response.ScriptData.GetGSDataList("player_buildings")) {
+					// GSData buildingGSData = buildingWrapperGSData.GetGSData("building");
 					Building buildingData = (Building)GSDataHelpers.GSDataToObject(buildingGSData);
 					gameData.AddBuilding(buildingData);
 					BuildingBehavior newBuilding = Instantiate<BuildingBehavior>(farmPrefab);
 					newBuilding.SetPlaced(true);
 					
-					newBuilding.transform.position = new Vector2(float.Parse(buildingData.posX), float.Parse(buildingData.posY));
+					newBuilding.transform.position = new Vector2(buildingData.position.x, buildingData.position.y);
 					dataGameObjectsMap.Add(buildingData, newBuilding.gameObject);
 				}
 			}

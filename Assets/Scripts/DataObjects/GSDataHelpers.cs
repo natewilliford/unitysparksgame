@@ -29,9 +29,17 @@ public static class GSDataHelpers {
                 } else if(field.FieldType == typeof(List<float>) || field.GetValue(obj).GetType() == typeof(float[])) {
                     gsData.AddNumberList(field.Name,  (field.FieldType == typeof(List<float>)) ? field.GetValue(obj) as List<float> : new List<float>(field.GetValue(obj) as float[]));
                 } else if(field.FieldType  == typeof(DateTime)) {
-                    gsData.AddDate(field.Name, (DateTime)field.GetValue(obj));
+                    // gsData.AddDate(field.Name, (DateTime)field.GetValue(obj));
+                    DateTime dateTime =(DateTime)field.GetValue(obj);
+                    gsData.AddNumber(field.Name, DateTimeToMillis(dateTime));
                 } else if(field.FieldType.IsClass && !field.FieldType.IsGenericType) {
-                    gsData.AddObject(field.Name, ObjectToGSData(field.GetValue(obj)));
+                    if (field.FieldType == typeof(ObjectId)) {
+                        GSRequestData objIdGSData = new GSRequestData();
+                        objIdGSData.AddString("$oid", ((ObjectId)field.GetValue(obj)).oid);
+                        gsData.AddObject(field.Name, objIdGSData);
+                    } else {
+                        gsData.AddObject(field.Name, ObjectToGSData(field.GetValue(obj)));
+                    }                    
                 } else if (field.FieldType.IsGenericType && field.FieldType.GetGenericTypeDefinition() == typeof(List<>) || field.FieldType.IsArray) {
                     List<GSData> gsDataList = new List<GSData>();
                     foreach(var elem in field.GetValue(obj) as IList) {
@@ -57,9 +65,10 @@ public static class GSDataHelpers {
                 } else if(typeField.FieldType == typeof(float)) {
                     typeField.SetValue(obj, (float)gsData.GetFloat(typeField.Name).Value);    
                 } else if(typeField.FieldType == typeof(bool)) {
-                    typeField.SetValue(obj, gsData.GetBoolean(typeField.Name));    
+                    typeField.SetValue(obj, gsData.GetBoolean(typeField.Name));
                 } else if(typeField.FieldType == typeof(DateTime)) {
-                    typeField.SetValue(obj, gsData.GetDate(typeField.Name));    
+                    // typeField.SetValue(obj, gsData.GetDate(typeField.Name));
+                    typeField.SetValue(obj, MillisToDateTime((long)gsData.GetNumber(typeField.Name)));
                 } else if((typeField.FieldType == typeof(List<string>) || typeField.FieldType == typeof(string[]) )) {
                     typeField.SetValue(obj, (typeField.FieldType == typeof(List<string>)) ? (object)gsData.GetStringList(typeField.Name) : gsData.GetStringList(typeField.Name).ToArray());  
                 } else if((typeField.FieldType == typeof(List<int>) || typeField.FieldType == typeof(int[]))) {
@@ -67,7 +76,13 @@ public static class GSDataHelpers {
                 } else if((typeField.FieldType == typeof(List<float>) || typeField.FieldType == typeof(float[]))) {
                     typeField.SetValue(obj, (typeField.FieldType == typeof(List<float>)) ? (object)gsData.GetFloatList(typeField.Name) : gsData.GetFloatList(typeField.Name).ToArray());    
                 } else if(typeField.FieldType.IsClass && !typeField.FieldType.IsGenericType && !typeField.FieldType.IsArray) {
-                    typeField.SetValue(obj, GSDataToObject(gsData.GetGSData(typeField.Name)));
+                    if (typeField.FieldType == typeof(ObjectId)) {
+                        GSData objIdGSData = gsData.GetGSData(typeField.Name);
+                        ObjectId objectId = new ObjectId(objIdGSData.GetString("$oid"));
+                        typeField.SetValue(obj, objectId);
+                    } else {
+                        typeField.SetValue(obj, GSDataToObject(gsData.GetGSData(typeField.Name)));
+                    }
                 } else if(!typeField.FieldType.IsArray && typeof(IList).IsAssignableFrom(typeField.FieldType)) {
                     IList genericList = Activator.CreateInstance(typeField.FieldType) as IList;
                     foreach(GSData gsDataElem in gsData.GetGSDataList(typeField.Name)) {
@@ -96,6 +111,17 @@ public static class GSDataHelpers {
     /** Returns the size of the data in bytes. */
     public static int SizeOfGSData(GSData data) {
         return data.JSON.Length * sizeof(char);
+    }
+
+    private static readonly DateTime EPOCH = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+
+    private static long DateTimeToMillis(DateTime dateTime) {
+        
+        return (long)(dateTime.ToUniversalTime() - EPOCH).TotalMilliseconds;
+    }
+
+    private static DateTime MillisToDateTime(long millis) {
+        return EPOCH.AddMilliseconds(millis);
     }
 }
 
